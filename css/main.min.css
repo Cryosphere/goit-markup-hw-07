@@ -1,0 +1,1 @@
+:root{--accent-color: #2196F3;--main-text-color: #212121;--text-color: #757575;--secondary-text-color: #ffffff;--main-bg-color: #FFFFFF;--secondary-bg-color: #2F303A;--time-func: cubic-bezier(0.4, 0, 0.2, 1)}body{font-family:"Roboto",sans-serif;color:var(--main-text-color)}h1,h2,h3,h4,h5,h6,p{margin:0}img{display:block;margin:0}/*# sourceMappingURL=main.min.css.map */
