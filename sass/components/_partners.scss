@@ -1,0 +1,59 @@
+/* Partners styles */
+
+.partners {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.partners-header {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.partners-list {
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    list-style-type: none;
+}
+
+
+.client-link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-func;
+}
+
+.client-link:hover,
+.client-link:focus {
+    border-color: $accent-color;
+}
+
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+    fill: $accent-color;
+}
+
+.client-logo {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $time-func;
+    fill: #AFB1B8;
+}
