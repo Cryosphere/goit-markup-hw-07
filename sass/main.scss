@@ -5,10 +5,12 @@
 @import 'components/services';
 @import 'components/command';
 @import 'components/partners';
+@import 'components/gallery';
 @import 'components/footer';
 @import 'components/modal';
 
 body {
+
     font-family: 'Roboto', sans-serif;
     color: $main-text-color
 }
