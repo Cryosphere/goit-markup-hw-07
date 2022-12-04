@@ -13,39 +13,7 @@
 }
 
 
-.button-hero {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    font-family: inherit;
-    font-weight: 700;
-    width: 216px;
-    height: 50px;
-    font-size: 16px;
-    line-height: 1.88;
-    cursor: pointer;
-    letter-spacing: 0.06em;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    background-color: $accent-color;
-    color: $secondary-text-color;
-    border-color: transparent;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: $time-func;
-
-}
-
-.button-hero:hover,
-.button-hero:focus {
-    background-color: hsla(207, 90%, 54%, 0.45);
-    color: hsla(0, 0%, 100%, 0.45);
-}
-
-.hero-header {
+.hero__header {
     width: 696px;
     height: 120px;
     margin-left: auto;
@@ -59,4 +27,40 @@
     text-align: center;
     text-transform: uppercase;
 
+}
+
+.hero__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    width: 216px;
+    height: 50px;
+
+}
+
+.btn{
+    font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+    
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background-color: $accent-color;
+        color: $secondary-text-color;
+        border-color: transparent;
+    
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: $time-func;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    background-color: hsla(207, 90%, 54%, 0.45);
+    color: hsla(0, 0%, 100%, 0.45);
 }

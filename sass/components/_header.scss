@@ -11,25 +11,11 @@
     align-items: center;
 }
 
-.logo1 {
+.header__logo{
     margin-right: 93px;
-
-    display: block;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: $main-text-color;
 }
 
-.logo-web {
-    color: $accent-color;
-}
-
-
-.nav-list {
+.nav__list {
     display: flex;
     padding-inline-start: 0px;
 
@@ -40,11 +26,11 @@
     letter-spacing: 0.02em;
 }
 
-.nav-list-item:not(:last-child) {
+.nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-list .link {
+.nav__link {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -57,7 +43,7 @@
     transition-timing-function: $time-func;
 }
 
-.nav-list .link.current::after {
+.nav__link--current::after {
     display: block;
     content: '';
     position: absolute;
@@ -69,13 +55,13 @@
     border-radius: 4px;
 }
 
-.nav-list .link:hover,
-.nav-list .link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: $accent-color;
 
 }
 
-.link.current {
+.nav__link--current {
     color: $accent-color;
 }
 
@@ -88,7 +74,7 @@
     letter-spacing: 0.02em;
 }
 
-.contacts-mail {
+.contacts__mail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +89,7 @@
     transition-timing-function: $time-func;
 }
 
-.contacts-phone {
+.contacts__phone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,23 +103,23 @@
     transition-timing-function: $time-func;
 }
 
-.contact-icon {
+.contact__icon {
     fill: currentColor;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
 }
 
-.contacts-mail:hover,
-.contacts-mail:focus,
-.contacts-phone:hover,
-.contacts-phone:focus {
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__phone:hover,
+.contacts__phone:focus {
     color: $accent-color;
 }
 
-.contacts-mail:hover .contact-icon,
-.contacts-mail:focus .contact-icon,
-.contacts-phone:hover .contact-icon,
-.contacts-phone:focus .contact-icon {
+.contacts__mail:hover .contacts__icon,
+.contacts__mail:focus .contacts__icon,
+.contacts__phone:hover .contacts__icon,
+.contacts__phone:focus .contacts__icon {
     fill: $accent-color;
 }

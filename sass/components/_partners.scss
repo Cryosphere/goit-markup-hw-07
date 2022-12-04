@@ -5,7 +5,7 @@
     padding-bottom: 94px;
 }
 
-.partners-header {
+.partners__header {
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -14,7 +14,7 @@
     letter-spacing: 0.03em;
 }
 
-.partners-list {
+.partners__list {
     margin-right: auto;
     margin-left: auto;
 
@@ -26,7 +26,7 @@
 }
 
 
-.client-link {
+.partners__link {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -41,19 +41,20 @@
     transition-timing-function: $time-func;
 }
 
-.client-link:hover,
-.client-link:focus {
-    border-color: $accent-color;
-}
-
-.client-link:hover .client-logo,
-.client-link:focus .client-logo {
-    fill: $accent-color;
-}
-
-.client-logo {
+.partners__logo {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
     fill: #AFB1B8;
 }
+
+.partners__link:hover,
+.partners__link:focus {
+    border-color: $accent-color;
+}
+
+.partners__link:hover .partners__logo,
+.partners__link:focus .partners__logo {
+    fill: $accent-color;
+}
+

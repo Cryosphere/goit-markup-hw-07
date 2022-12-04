@@ -5,19 +5,19 @@
     padding-top: 94px;
 }
 
-.features-list {
+.features__list {
     display: flex;
     list-style-type: none;
 }
 
 
 
-.features-list-item:not(:last-child) {
+.features__item:not(:last-child) {
     margin-right: 30px;
 
 }
 
-.features-icon {
+.features__icon {
     width: 270px;
     height: 120px;
 
@@ -30,7 +30,7 @@
     border-radius: 4px;
 }
 
-.features-header {
+.features__header {
     margin-bottom: 10px;
 
     font-size: 14px;
@@ -40,7 +40,7 @@
     text-transform: uppercase;
 }
 
-.features-text {
+.features__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

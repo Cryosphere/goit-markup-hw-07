@@ -1,5 +1,6 @@
 @import 'utils/variables';
 @import 'components/header';
+@import 'components/logo';
 @import 'components/hero';
 @import 'components/features';
 @import 'components/services';
@@ -25,10 +26,10 @@ p {
     margin: 0;
 }
 
-// img {
-//     display: block;
-//     margin: 0;
-// }
+img {
+    display: block;
+    margin: 0;
+}
 
 ul {
     padding-inline-start: 0;

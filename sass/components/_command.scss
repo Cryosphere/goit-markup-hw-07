@@ -6,7 +6,15 @@
     background-color: #F5F4FA;
 }
 
-.command-list {
+.command__header {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.command__list {
 
     margin-right: auto;
     margin-left: auto;
@@ -16,16 +24,7 @@
     justify-content: space-between;
 }
 
-.command-header {
-    margin-bottom: 50px;
-
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.command-list-item {
+.command__item {
     width: 270px;
 
     font-size: 16px;
@@ -39,7 +38,13 @@
 
 }
 
-.com-card-header {
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__header {
     margin-bottom: 10px;
 
     display: block;
@@ -50,25 +55,21 @@
     color: $main-text-color;
 }
 
-.com-card-text {
+.card__text {
     display: block;
 
     color: $text-color;
 }
 
-.item-info {
+.card__info {
     padding-top: 30px;
     padding-bottom: 30px;
 
 }
 
-.command-item-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.social-list {
+
+.social__list {
     margin-top: 16px;
 
     display: flex;
@@ -77,7 +78,7 @@
     gap: 10px;
 }
 
-.social-list-item {
+.social__item {
     width: 44px;
     height: 44px;
 
@@ -87,7 +88,7 @@
     border-radius: 50%;
 }
 
-.social-list-item .social-link {
+.social__item .social__link {
 
     width: 100%;
     height: 100%;
@@ -103,20 +104,20 @@
     transition-timing-function: $time-func;
 }
 
-.card-social-icon {
+.social__icon {
     fill: #AFB1B8;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
 }
 
-.social-link:hover .card-social-icon,
-.social-link:focus .card-social-icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
 
     fill: #FFFFFF;
 }
 
-.social-list-item .social-link:hover,
-.social-list-ite .social-link:focus {
+.social__item .social__link:hover,
+.social__item .social__link:focus {
     background-color: #2196F3;
 }

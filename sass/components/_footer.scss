@@ -61,21 +61,13 @@
     color: $accent-color;
 }
 
-.logo2 {
+.footer__logo{
     margin-bottom: 20px;
 
-    display: inline-block;
-
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
     color: #ffffff;
 }
 
-.footer-social {
+.footer__social__header {
     margin-bottom: 20px;
 
     font-family: 'Roboto';
@@ -89,11 +81,11 @@
     color: #FFFFFF;
 }
 
-.footer-social-icon {
+.footer__social__icon {
     fill: #FFFFFF;
 }
 
-.footer-social-link {
+.footer__social__link {
     width: 100%;
     height: 100%;
 
@@ -109,8 +101,8 @@
 
 }
 
-.footer-social-link:focus,
-.footer-social-link:hover {
+.footer__social__link:focus,
+.footer__social__link:hover {
     background-color: $accent-color;
 }
 
@@ -164,31 +156,13 @@
     position: relative;
 }
 
-.footer-button {
+.footer__btn {
     width: 200px;
     height: 50px;
     padding: 6px 22px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    cursor: pointer;
-    letter-spacing: 0.06em;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    background-color: $accent-color;
-    color: $secondary-text-color;
-    border-color: transparent;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: $time-func;
-
 }
 
 .footer-button:hover,
