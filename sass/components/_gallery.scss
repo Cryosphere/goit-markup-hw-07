@@ -3,7 +3,7 @@
 .gallery {
     padding-bottom: 94px;
     padding-top: 94px;
-}
+
 
 .filter {
     margin-bottom: 50px;
@@ -12,38 +12,38 @@
     display: flex;
     justify-content: center;
 
+    .filter__btn {
+            padding: 6px 22px;
+    
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.62;
+            text-align: center;
+            letter-spacing: 0.03em;
+    
+            background-color: #F5F4FA;
+            color: $main-text-color;
+            cursor: pointer;
+            border-radius: 4px;
+            border: none;
+    
+            transition-property: color, background-color, box-shadow;
+            transition-duration: 250ms;
+            transition-timing-function: $time-func;
+
+            &:hover,
+            &:focus {
+                    background-color: $accent-color;
+                    color: $secondary-text-color;
+                    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                }
+        }
+
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
     margin-right: 8px;
-}
-
-.button-filter {
-    padding: 6px 22px;
-
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    background-color: #F5F4FA;
-    color: $main-text-color;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: $time-func;
-}
-
-.button-filter:hover,
-.button-filter:focus {
-    background-color: $accent-color;
-    color: $secondary-text-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects {
@@ -55,9 +55,9 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: flex-start;
-}
 
-.project-item-header {
+
+.projects__item-header {
     margin-bottom: 4px;
 
     display: block;
@@ -69,43 +69,18 @@
     color: $main-text-color;
 }
 
-.project-item {
+.projects__item {
 
 
     padding: 0;
 }
 
-.overlay-box {
-    overflow: hidden;
-    position: relative;
-}
-
-.overlay-text {
-    padding-left: 24px;
-    padding-right: 24px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    align-items: center;
-
-    font-size: 18px;
-    line-height: calc(28/18);
-    letter-spacing: 0.03em;
-
-    color: #FFFFFF;
-    background: rgba(33, 150, 243, 0.9);
-
-    transition: transform 250ms $time-func;
-    transform: translateY(100%);
-
-}
 
 
-.project-item-p {
+
+
+
+.projects__desription {
 
     font-size: 16px;
     line-height: 1.88;
@@ -113,7 +88,7 @@
     color: $text-color;
 }
 
-.projects-item-info {
+.projects__info {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
@@ -121,23 +96,57 @@
 
 }
 
-.project-item-link {
+.projects__link {
     text-decoration: none;
     display: block;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
+
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+        }
+}
 }
 
-.project-item-link:hover,
-.project-item-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+.overlay {
+    overflow: hidden;
+    position: relative;
 
+    .overlay__text {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+
+        font-size: 18px;
+        line-height: calc(28/18);
+        letter-spacing: 0.03em;
+
+        color: #FFFFFF;
+        background: rgba(33, 150, 243, 0.9);
+
+        transition: transform 250ms $time-func;
+        transform: translateY(100%);
+
+
+        .projects__link:hover &,
+        .projects__link:focus & {
+            transform: translateX(0);
+        }
+
+    }
+}
 }
 
-.project-item-link:hover .overlay-text,
-.project-item-link:focus .overlay-text {
-    transform: translateX(0);
-}
+

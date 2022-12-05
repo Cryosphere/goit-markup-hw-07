@@ -549,8 +549,7 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
-.filter {
+.gallery .filter {
   margin-bottom: 50px;
   list-style-type: none;
   display: -webkit-box;
@@ -560,12 +559,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.filter-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.button-filter {
+.gallery .filter .filter__btn {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -587,16 +581,16 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-filter:hover,
-.button-filter:focus {
+.gallery .filter .filter__btn:hover, .gallery .filter .filter__btn:focus {
   background-color: #2196F3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-.projects {
+.gallery .filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+.gallery .projects {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -610,8 +604,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-
-.project-item-header {
+.gallery .projects .projects__item-header {
   margin-bottom: 4px;
   display: block;
   font-size: 18px;
@@ -619,17 +612,42 @@
   letter-spacing: 0.06em;
   color: #212121;
 }
-
-.project-item {
+.gallery .projects .projects__item {
   padding: 0;
 }
-
-.overlay-box {
+.gallery .projects .projects__desription {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.gallery .projects .projects__info {
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 20px 24px;
+}
+.gallery .projects .projects__link {
+  text-decoration: none;
+  display: block;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery .projects .projects__link:hover, .gallery .projects .projects__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.gallery .overlay {
   overflow: hidden;
   position: relative;
 }
-
-.overlay-text {
+.gallery .overlay .overlay__text {
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
@@ -655,42 +673,7 @@
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
-
-.project-item-p {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.projects-item-info {
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  padding: 20px 24px;
-}
-
-.project-item-link {
-  text-decoration: none;
-  display: block;
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: -webkit-box-shadow;
-  transition-property: box-shadow;
-  transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-item-link:hover,
-.project-item-link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-item-link:hover .overlay-text,
-.project-item-link:focus .overlay-text {
+.projects__link:hover .gallery .overlay .overlay__text, .projects__link:focus .gallery .overlay .overlay__text {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -1195,9 +1178,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.submit.button:hover,
-.submit.button:focus {
+.submit.button:hover, .submit.button:focus {
   background-color: hsla(207deg, 90%, 54%, 0.45);
   color: hsla(0deg, 0%, 100%, 0.45);
 }

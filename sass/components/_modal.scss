@@ -209,12 +209,6 @@
 }
 
 
-
-// .icon-checkbox {
-//     position: absolute;
-//     left: 54px;
-// }
-
 .checkbox__label {
     position: relative;
     margin-bottom: 30px;
@@ -293,10 +287,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
+
+    &:hover,
+    &:focus {
+        background-color: hsla(207, 90%, 54%, 0.45);
+        color: hsla(0, 0%, 100%, 0.45);
+        }
 }
 
-.submit.button:hover,
-.submit.button:focus {
-    background-color: hsla(207, 90%, 54%, 0.45);
-    color: hsla(0, 0%, 100%, 0.45);
-}
