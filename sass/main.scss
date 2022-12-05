@@ -10,6 +10,10 @@
 @import 'components/footer';
 @import 'components/modal';
 
+:root{
+    --accent-color: #2196F3;
+}
+
 body {
 
     font-family: 'Roboto', sans-serif;

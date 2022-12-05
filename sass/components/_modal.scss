@@ -38,13 +38,17 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 300ms $time-func;
-}
 
+}
+      
 .backdrop.is-hidden .modal {
     transform: scale(0.4) translate(50%, 50%);
+
 }
 
-.close-modal {
+
+
+.modal__close {
     display: flex;
     position: absolute;
     right: 8px;
@@ -57,21 +61,25 @@
 
 }
 
-.close-icon {
+.modal__icon-close {
     display: block;
     --color3: rgba(0, 0, 0, 0.1);
     --color2: #000000;
     transition-property: var(--color2);
     transition-duration: 250ms;
     transition-timing-function: $time-func;
+
+    &:hover,
+    &:focus {
+            --color2: var(--accent-color);
+            // --color2: $accent-color;
+
+      }
 }
 
-.close-icon:hover,
-.close-icon:focus {
-    --color2: $accent-color;
-}
 
-.submit {
+
+.modal__submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +88,7 @@
 
 }
 
-.modal-header {
+.modal__header {
 
     margin-bottom: 12px;
 
@@ -92,7 +100,7 @@
     color: $main-text-color;
 }
 
-.inputs {
+.modal__inputs {
 
     display: flex;
     flex-direction: column;
@@ -101,7 +109,7 @@
 
 }
 
-.label {
+.modal__label {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -115,7 +123,7 @@
     color: $text-color;
 }
 
-.input {
+.modal__input {
     width: 448px;
     height: 40px;
     margin-top: 4px;
@@ -129,41 +137,39 @@
     transition-duration: 250ms;
     transition-timing-function: $time-func;
 
+    .modal__label:focus-within & {
+    outline: none;
+    border-color: $accent-color;}
 
+    .modal__label:hover & {
+            outline: none;
+            border-color: $accent-color;
+        }
 }
 
-.input:not(:last-child) .label {
+.modal__input:not(:last-child) .modal__label {
     margin-bottom: 10px;
 }
 
-.input-icon {
+.modal__icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
+
+.modal__label:focus-within & {
+        fill: $accent-color;
+    }
+
+        .modal__label:hover & {
+            fill: $accent-color;
+        }
 }
 
-.label:focus-within .input-icon {
-    fill: $accent-color;
-}
 
-.label:focus-within .input {
-    outline: none;
-    border-color: $accent-color;
-}
-
-.label:hover .input-icon {
-    fill: $accent-color;
-}
-
-.label:hover .input {
-    outline: none;
-    border-color: $accent-color;
-}
-
-.user-comments {
+.modal__user-comments {
     margin-top: 4px;
     width: 448px;
     height: 120px;
@@ -178,17 +184,21 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
+
+    .modal__label-comments:focus-within,
+    .modal__label-comments:hover & {
+        border-color: $accent-color;
+    }
+
 }
 
-.label:focus-within,
-.label:hover .user-comments {
-    border-color: $accent-color;
-}
 
-.label-comments {
+
+.modal__label-comments {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 12px;
@@ -198,7 +208,14 @@
     color: $text-color;
 }
 
-.label-checkbox {
+
+
+// .icon-checkbox {
+//     position: absolute;
+//     left: 54px;
+// }
+
+.checkbox__label {
     position: relative;
     margin-bottom: 30px;
     display: flex;
@@ -206,25 +223,7 @@
     align-items: center;
 }
 
-.icon-checkbox {
-    position: absolute;
-    left: 54px;
-}
-
-.checkbox-content {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 2.0;
-
-
-    letter-spacing: 0.03em;
-
-    color: #757575;
-    user-select: none;
-}
-
-.form-checkbox {
+.checkbox {
     margin-left: 14px;
     margin-right: 7px;
     appearance: none;
@@ -238,16 +237,35 @@
     transition-property: background-size;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
-}
 
-.form-checkbox:checked {
-    border: none;
-    background-size: contain;
-}
+    &:checked {
+            border: none;
+            background-size: contain;
+        }
 
-.checkbox-link {
+    .checkbox__text {
+        font-style: normal;
+        font-weight: 400;
+                    font-size: 14px;
+                    line-height: 2.0;
+        
+        
+                    letter-spacing: 0.03em;
+        
+                    color: #757575;
+                    user-select: none;
+                }
+
+.checkbox__link {
     color: $accent-color;
 }
+
+}
+
+
+
+
+
 
 .submit.button {
     margin-left: auto;
