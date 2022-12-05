@@ -860,9 +860,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.footer-button:hover,
-.footer-button:focus {
+.footer__btn:hover, .footer__btn:focus {
   background-color: hsla(207deg, 90%, 54%, 0.45);
   color: hsla(0deg, 0%, 100%, 0.45);
 }

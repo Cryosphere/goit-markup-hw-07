@@ -163,13 +163,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover,
+    &:focus {
+        background-color: hsla(207, 90%, 54%, 0.45);
+        color: hsla(0, 0%, 100%, 0.45);
+    }
+
+
 }
 
-.footer-button:hover,
-.footer-button:focus {
-    background-color: hsla(207, 90%, 54%, 0.45);
-    color: hsla(0, 0%, 100%, 0.45);
-}
+
 
 .btn-icon {
     fill: currentColor;
