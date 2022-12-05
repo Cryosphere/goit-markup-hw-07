@@ -1181,10 +1181,6 @@
   color: hsla(0deg, 0%, 100%, 0.45);
 }
 
-:root {
-  --accent-color: #2196F3;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
