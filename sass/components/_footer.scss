@@ -99,12 +99,14 @@
     transition-duration: 300ms;
     transition-timing-function: $time-func;
 
+    :focus,
+    :hover {
+            background-color: $accent-color;
+        }
+
 }
 
-.footer__social__link:focus,
-.footer__social__link:hover {
-    background-color: $accent-color;
-}
+
 
 .container-form {
     margin-left: 93px;
@@ -164,8 +166,8 @@
     align-items: center;
     justify-content: center;
 
-    &:hover,
-    &:focus {
+    :hover,
+    :focus {
         background-color: hsla(207, 90%, 54%, 0.45);
         color: hsla(0, 0%, 100%, 0.45);
     }

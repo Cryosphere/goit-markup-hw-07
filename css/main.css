@@ -783,9 +783,8 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer__social__link:focus,
-.footer__social__link:hover {
+.footer__social__link :focus,
+.footer__social__link :hover {
   background-color: #2196F3;
 }
 
@@ -860,7 +859,8 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.footer__btn:hover, .footer__btn:focus {
+.footer__btn :hover,
+.footer__btn :focus {
   background-color: hsla(207deg, 90%, 54%, 0.45);
   color: hsla(0deg, 0%, 100%, 0.45);
 }
@@ -943,7 +943,7 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__icon-close:hover, .modal__icon-close:focus {
-  --color2: var(--accent-color);
+  --color2: #2196F3;
 }
 
 .modal__submit {
