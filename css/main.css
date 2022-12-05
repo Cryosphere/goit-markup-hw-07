@@ -783,8 +783,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__social__link :focus,
-.footer__social__link :hover {
+.social__item .footer__social__link:focus, .social__item .footer__social__link:hover {
   background-color: #2196F3;
 }
 
@@ -1101,6 +1100,9 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.checkbox__label .checkbox__link {
+  color: #2196F3;
+}
 
 .checkbox {
   margin-left: 14px;
@@ -1137,9 +1139,6 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-.checkbox .checkbox__link {
-  color: #2196F3;
 }
 
 .submit.button {

@@ -215,6 +215,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    .checkbox__link {
+            color: $accent-color;
+        }
+
+    
 }
 
 .checkbox {
@@ -248,14 +254,12 @@
         
                     color: #757575;
                     user-select: none;
+                
                 }
 
-.checkbox__link {
-    color: $accent-color;
-}
+
 
 }
-
 
 
 
