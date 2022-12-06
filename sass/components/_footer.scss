@@ -31,12 +31,12 @@
 
 }
 
-.address-list {
+.address__list {
     list-style-type: none;
 
 }
 
-.address-list .item:not(:last-child) {
+.address__list .item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -45,20 +45,30 @@
 
 }
 
-.address-mail,
-.address-phone {
+.address__mail{
+    text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: $time-func;
+    
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+}
+
+.address__phone {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
-}
-
-.address-mail:hover,
-.address-phone:hover,
-.address-mail:focus,
-.address-phone:focus {
+    
+    &:hover,
+    &:focus{
     color: $accent-color;
+    }
 }
 
 .footer__logo{
@@ -108,11 +118,11 @@
 
 
 
-.container-form {
+.footer__form {
     margin-left: 93px;
 }
 
-.form-with-button {
+.footer__form__container {
     display: flex;
     gap: 12px;
     justify-content: center;
@@ -120,7 +130,7 @@
     margin-top: 20px;
 }
 
-.sign-up {
+.footer__form__text {
     margin: 0;
     font-weight: 700;
     font-size: 14px;
@@ -129,7 +139,7 @@
     color: $secondary-text-color;
 }
 
-.form-input {
+.footer__form__input {
     width: 100%;
     height: 50px;
     padding-left: 16px;
@@ -140,7 +150,7 @@
     color: inherit;
 }
 
-.form-label {
+.footer__form__label {
     display: block;
     width: 358px;
     font-size: 16px;
@@ -148,12 +158,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.form-name {
-    position: absolute;
-    bottom: 0;
-}
-
-.input-container {
+.footer__form__sign-up {
     display: flex;
     position: relative;
 }
@@ -166,18 +171,17 @@
     align-items: center;
     justify-content: center;
 
-    :hover,
-    :focus {
+    &:hover,
+    &:focus {
         background-color: hsla(207, 90%, 54%, 0.45);
         color: hsla(0, 0%, 100%, 0.45);
     }
 
+    .footer__btn__icon {
+        fill: currentColor;
+        margin-left: 10px;
+    }
 
 }
 
 
-
-.btn-icon {
-    fill: currentColor;
-    margin-left: 10px;
-}

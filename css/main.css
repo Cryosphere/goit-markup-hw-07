@@ -53,6 +53,9 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav__link:hover, .nav__link:focus {
+  color: #2196F3;
+}
 
 .nav__link--current::after {
   display: block;
@@ -64,11 +67,6 @@
   height: 4px;
   background-color: #2196F3;
   border-radius: 4px;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: #2196F3;
 }
 
 .nav__link--current {
@@ -108,6 +106,9 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts__mail:hover, .contacts__mail:focus {
+  color: #2196F3;
+}
 
 .contacts__phone {
   display: -webkit-box;
@@ -130,6 +131,9 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts__phone:hover, .contacts__phone:focus {
+  color: #2196F3;
+}
 
 .contacts__icon {
   fill: currentColor;
@@ -140,18 +144,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contacts__mail:hover,
-.contacts__mail:focus,
-.contacts__phone:hover,
-.contacts__phone:focus {
-  color: #2196F3;
-}
-
-.contacts__mail:hover .contacts__icon,
-.contacts__mail:focus .contacts__icon,
-.contacts__phone:hover .contacts__icon,
-.contacts__phone:focus .contacts__icon {
+.contacts__mail:hover .contacts__icon, .contacts__mail:focus .contacts__icon, .contacts__phone:hover .contacts__icon, .contacts__phone:focus .contacts__icon {
   fill: #2196F3;
 }
 
@@ -204,6 +197,10 @@
   width: 216px;
   height: 50px;
 }
+.hero__btn:hover, .hero__btn:focus {
+  background-color: hsla(207deg, 90%, 54%, 0.45);
+  color: hsla(0deg, 0%, 100%, 0.45);
+}
 
 .btn {
   font-family: inherit;
@@ -224,12 +221,6 @@
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: hsla(207deg, 90%, 54%, 0.45);
-  color: hsla(0deg, 0%, 100%, 0.45);
 }
 
 /* Features styles */
@@ -454,6 +445,9 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social__item .social__link:hover, .social__item .social__link:focus {
+  background-color: #2196F3;
+}
 
 .social__icon {
   fill: #AFB1B8;
@@ -464,15 +458,8 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
+.social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: #FFFFFF;
-}
-
-.social__item .social__link:hover,
-.social__item .social__link:focus {
-  background-color: #2196F3;
 }
 
 /* Partners styles */
@@ -523,6 +510,9 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.partners__link:hover, .partners__link:focus {
+  border-color: #2196F3;
+}
 
 .partners__logo {
   -webkit-transition-property: fill;
@@ -533,14 +523,7 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #AFB1B8;
 }
-
-.partners__link:hover,
-.partners__link:focus {
-  border-color: #2196F3;
-}
-
-.partners__link:hover .partners__logo,
-.partners__link:focus .partners__logo {
+.partners__link:hover .partners__logo, .partners__link:focus .partners__logo {
   fill: #2196F3;
 }
 
@@ -710,11 +693,11 @@
   letter-spacing: 0.03em;
 }
 
-.address-list {
+.address__list {
   list-style-type: none;
 }
 
-.address-list .item:not(:last-child) {
+.address__list .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -722,8 +705,7 @@
   color: #ffffff;
 }
 
-.address-mail,
-.address-phone {
+.address__mail {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition-property: color;
@@ -733,11 +715,21 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.address__mail:hover, .address__mail:focus {
+  color: #2196F3;
+}
 
-.address-mail:hover,
-.address-phone:hover,
-.address-mail:focus,
-.address-phone:focus {
+.address__phone {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__phone:hover, .address__phone:focus {
   color: #2196F3;
 }
 
@@ -787,11 +779,11 @@
   background-color: #2196F3;
 }
 
-.container-form {
+.footer__form {
   margin-left: 93px;
 }
 
-.form-with-button {
+.footer__form__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -805,7 +797,7 @@
   margin-top: 20px;
 }
 
-.sign-up {
+.footer__form__text {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -814,7 +806,7 @@
   color: #ffffff;
 }
 
-.form-input {
+.footer__form__input {
   width: 100%;
   height: 50px;
   padding-left: 16px;
@@ -824,7 +816,7 @@
   color: inherit;
 }
 
-.form-label {
+.footer__form__label {
   display: block;
   width: 358px;
   font-size: 16px;
@@ -832,12 +824,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-name {
-  position: absolute;
-  bottom: 0;
-}
-
-.input-container {
+.footer__form__sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,13 +845,11 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.footer__btn :hover,
-.footer__btn :focus {
+.footer__btn:hover, .footer__btn:focus {
   background-color: hsla(207deg, 90%, 54%, 0.45);
   color: hsla(0deg, 0%, 100%, 0.45);
 }
-
-.btn-icon {
+.footer__btn .footer__btn__icon {
   fill: currentColor;
   margin-left: 10px;
 }
@@ -1066,7 +1051,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__user-comments .modal__label-comments:focus-within, .modal__label-comments:hover .modal__user-comments {
+.modal__label-comments:focus-within .modal__user-comments, .modal__label-comments:hover .modal__user-comments {
   border-color: #2196F3;
 }
 

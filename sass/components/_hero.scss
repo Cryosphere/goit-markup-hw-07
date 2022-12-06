@@ -38,6 +38,12 @@
     width: 216px;
     height: 50px;
 
+    &:hover,
+    &:focus {
+            background-color: hsla(207, 90%, 54%, 0.45);
+            color: hsla(0, 0%, 100%, 0.45);
+        }
+
 }
 
 .btn{
@@ -57,10 +63,4 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: $time-func;
-}
-
-.hero__btn:hover,
-.hero__btn:focus {
-    background-color: hsla(207, 90%, 54%, 0.45);
-    color: hsla(0, 0%, 100%, 0.45);
 }

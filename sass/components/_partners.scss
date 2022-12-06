@@ -39,6 +39,11 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: $time-func;
+
+    &:hover,
+    &:focus {
+            border-color: $accent-color;
+        }
 }
 
 .partners__logo {
@@ -46,15 +51,9 @@
     transition-duration: 250ms;
     transition-timing-function: $time-func;
     fill: #AFB1B8;
-}
 
-.partners__link:hover,
-.partners__link:focus {
-    border-color: $accent-color;
+    .partners__link:hover &,
+    .partners__link:focus & {
+            fill: $accent-color;
+        }
 }
-
-.partners__link:hover .partners__logo,
-.partners__link:focus .partners__logo {
-    fill: $accent-color;
-}
-

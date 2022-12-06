@@ -185,7 +185,7 @@
     transition-duration: 250ms;
     transition-timing-function: $time-func;
 
-    .modal__label-comments:focus-within,
+    .modal__label-comments:focus-within &,
     .modal__label-comments:hover & {
         border-color: $accent-color;
     }
